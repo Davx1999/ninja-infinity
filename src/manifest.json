@@ -1,0 +1,39 @@
+{
+  "action": {
+    "default_icon": {
+      "32": "assets/images/logo128.png"
+    },
+    "default_title": "Ogame Infinity for Ninja"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "css": ["global.css"],
+      "js": ["main.js"],
+      "matches": ["*://*/bots/*/browser/html/*"],
+      "run_at": "document_start"
+    }
+  ],
+  "description": "OGI - To Ogame's infinity and beyond!",
+  "host_permissions": ["*://*/bots/*/browser/html/*"],
+  "icons": {
+    "512": "assets/images/logo512.png",
+    "256": "assets/images/logo512.png",
+    "128": "assets/images/logo128.png",
+    "32": "assets/images/logo128.png"
+  },
+  "manifest_version": 3,
+  "name": "Ogame Infinity for Ninja",
+  "permissions": ["storage"],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "2.3.9",
+  "web_accessible_resources": [
+    {
+      "extension_ids": ["hfojakphgokgpbnejoobfamojbgolcbo"],
+      "matches": ["<all_urls>"],
+      "resources": ["ogkush.js", "main.js", "libs/*", "assets/*", "util/*", "ctxpage/*", "ctxcontent/*"]
+    }
+  ]
+}

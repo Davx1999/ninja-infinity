@@ -1,0 +1,42 @@
+{
+  "name": "ogame-infinity",
+  "version": "2.1.1",
+  "description": "This extension provides a set additional features for OGame.",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npx prettier --write *.js",
+    "check": "npx eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ogame-infinity/web-extension.git"
+  },
+  "keywords": [
+    "ogame",
+    "infinity",
+    "features",
+    "plugin",
+    "extension",
+    "chrome",
+    "edge",
+    "browser"
+  ],
+  "author": "alexisfasquel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ogame-infinity/web-extension/issues"
+  },
+  "homepage": "https://github.com/ogame-infinity/web-extension#readme",
+  "devDependencies": {
+    "clean-css": "^5.3.2",
+    "clean-css-cli": "^5.6.2",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "3.0.2",
+    "terser": "^5.19.4"
+  }
+}
